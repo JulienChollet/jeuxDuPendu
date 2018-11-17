@@ -1,0 +1,24 @@
+h1{
+    text-align: center;
+}
+input{
+    border: solid 1px black;
+}
+#idFieldsetModeEmploi {
+    margin: 100px 50px  0 ;
+    background-color: #f5f5f5;
+    width: 15%;
+    border: solid 1px #ff0000;
+    float: left;
+    display: none;
+    position: absolute;
+}
+#idMotaDeviner{
+    padding-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.boutonLettre {
+    margin-bottom: 10px;
+    width:40px;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:onclick="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Jeu du Pendu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body id="idBody" style="background-color: #ffff00" onload="MotAdeviner();">
+    <div class="row">
+        <div class="col-lg-2">
+            <input onclick="modeEmploi();" type="button" class="btn btn-light" value="Mode d'emploi">
+        </div>
+        <div class="col-lg-7">
+            <h1 >Le jeu du pendu</h1>
+        </div>
+    </div>
+    <div class="row" id="idModeEmploi">
+        <div id="idFieldsetModeEmploi" class="col-lg-5">
+            <h2>Mode d'emploi</h2>
+            <div id="idparagrapheModeEmploi">
+                <p>Pour deviner le mot inconu</p>
+                <p>  Clic sur les lettres!</p>
+                <p>Vous serez pendu à la 6e erreur</p>
+            </div>
+         </div>
+    </div>
+     <div class="row">
+         <div class="col-lg-2 offset-lg-2">
+             <img src="img/corde0.gif">
+         </div>
+         <div class="col-lg-4">
+             <img src="img/p0.gif" id="idImagePendu">
+         </div>
+         <div class="col-lg-2">
+             <img src="img/corde0.gif">
+         </div>
+     </div>
+    <div class="row">
+        <div class="col-lg-7 offset-lg-2">
+            <h2 id="idMotaDeviner"></h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-7 offset-lg-4">
+            <div class="row">
+                <input  type="button" class="btn btn-outline-secondary  boutonLettre" value="A">
+                <input type="button" class="btn btn-outline-secondary  boutonLettre" value="B">
+                <input type="button" class="btn btn-outline-secondary  boutonLettre" value="C">
+                <input type="button" class="btn btn-outline-secondary  boutonLettre" value="D">
+                <input type="button" class="btn btn-outline-secondary  boutonLettre" value="E">
+                <input type="button" class="btn btn-outline-secondary  boutonLettre" value="F">
+                <input type="button" class="btn btn-outline-secondary  boutonLettre" value="G">
+                <input type="button" class="btn btn-outline-secondary  boutonLettre" value="H">
+                <input type="button" class="btn btn-outline-secondary  boutonLettre" value="I">
+                <input type="button" class="btn btn-outline-secondary  boutonLettre" value="J">
+                <input type="button" class="btn btn-outline-secondary  boutonLettre" value="K">
+                <input type="button" class="btn btn-outline-secondary  boutonLettre" value="L">
+                <input type="button" class="btn btn-outline-secondary  boutonLettre" value="M">
+            </div>
+            <div class="row">
+                <input type="button" class="btn btn-outline-secondary  boutonLettre" value="N">
+                <input type="button" class="btn btn-outline-secondary  boutonLettre" value="O">
+                <input type="button" class="btn btn-outline-secondary  boutonLettre" value="P">
+                <input type="button" class="btn btn-outline-secondary  boutonLettre" value="Q">
+                <input type="button" class="btn btn-outline-secondary  boutonLettre" value="R">
+                <input type="button" class="btn btn-outline-secondary  boutonLettre" value="S">
+                <input type="button" class="btn btn-outline-secondary  boutonLettre" value="T">
+                <input type="button" class="btn btn-outline-secondary  boutonLettre" value="U">
+                <input type="button" class="btn btn-outline-secondary  boutonLettre" value="V">
+                <input type="button" class="btn btn-outline-secondary  boutonLettre" value="W">
+                <input type="button" class="btn btn-outline-secondary  boutonLettre" value="X">
+                <input type="button" class="btn btn-outline-secondary  boutonLettre" value="Y">
+                <input type="button" class="btn btn-outline-secondary  boutonLettre" value="Z">
+            </div>
+        </div>
+    </div>
+</body>
+
+<script type="application/javascript" src="Js/dico.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+</html>
